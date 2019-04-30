@@ -6,7 +6,7 @@ module.exports = {
   config: {
 
     // plugin hyper-opacity
-    opacity: 0.7,
+    opacity: 0.85,
 
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
@@ -115,7 +115,7 @@ module.exports = {
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     // shellArgs: ['--login'],
-    shellArgs: ['/K', 'cd /d C:\\Coding\\Projekte\\EMI'],
+    shellArgs: ['/K', 'cd /d C:\\Coding\\Projekte'],
 
     // for environment variables
     env: {},
