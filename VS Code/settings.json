@@ -4,9 +4,13 @@
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.restoreViewState": false,
-  "workbench.colorTheme": "One Dark Theme",
+  "workbench.colorTheme": "Material Theme",
+  "workbench.colorCustomizations": {
+    "editor.foreground": "#cecece",
+  },
   "workbench.iconTheme": "vscode-icons",
   "workbench.settings.useSplitJSON": true,
+  "workbench.editor.highlightModifiedTabs": true,
   "window.zoomLevel": 0,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
@@ -14,8 +18,23 @@
   "explorer.autoReveal": false,
   "search.showLineNumbers": true,
   // editor
+  "editor.tokenColorCustomizations": {
+    "[Material Theme]": {
+      "textMateRules": [
+        {
+          "scope": "variable",
+          "settings": {
+            "foreground": "#cecece",
+          }
+        }
+      ]
+    }
+  },
   "editor.fontFamily": "Meslo LG L, 'Courier New', monospace",
-  "editor.fontSize": 15,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 20,
   "editor.renderIndentGuides": false,
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
@@ -27,13 +46,6 @@
   "html.format.wrapAttributes": "force-aligned",
   // "vetur.format.defaultFormatter.js": "vscode-typescript",
   // "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.format.defaultFormatter.js": "prettier",
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-aligned"
-    }
-  },
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
@@ -50,21 +62,18 @@
       "autoFix": true
     }
   ],
-  // colorize plugin
-  "colorize.languages": [
-    "javascript",
-    "css",
-    "sass",
-    "scss",
-    "less",
-    "postcss",
-    "sss",
-    "stylus",
-    "xml",
-    "svg"
-  ],
   // "Import Cost" plugin
   "importCost.bundleSizeDecoration": "minified",
-  "importCost.javascriptExtensions": ["\\.jsx?$", "\\.vue$"],
-  "importCost.typescriptExtensions": ["\\.tsx?$", "\\.vue$"]
+  "importCost.javascriptExtensions": [
+    "\\.jsx?$",
+    "\\.vue$"
+  ],
+  "importCost.typescriptExtensions": [
+    "\\.tsx?$",
+    "\\.vue$"
+  ],
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.statusBar.feedback.visible": false,
+    // "typescript.tsserver.log": "verbose",
 }
