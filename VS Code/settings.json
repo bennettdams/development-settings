@@ -4,13 +4,16 @@
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.restoreViewState": false,
-  "workbench.colorTheme": "Material Theme",
-  "workbench.colorCustomizations": {
-    "editor.foreground": "#cecece",
-  },
-  "workbench.iconTheme": "vscode-icons",
   "workbench.settings.useSplitJSON": true,
-  "workbench.editor.highlightModifiedTabs": true,
+  // "workbench.colorTheme": "GitHub Sharp Dark",
+  "workbench.colorCustomizations": {
+    // "editor.foreground": "#cecece",
+    "editor.background": "#040a12",
+    // "sideBar.background": "#04101b9d",
+    // "activityBar.background": "#04101b9d",
+    // "titleBar.activeBackground": "#04101b9d"
+  },
+  "workbench.tree.renderIndentGuides": "always",
   "window.zoomLevel": 0,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
@@ -18,62 +21,58 @@
   "explorer.autoReveal": false,
   "search.showLineNumbers": true,
   // editor
-  "editor.tokenColorCustomizations": {
-    "[Material Theme]": {
-      "textMateRules": [
-        {
-          "scope": "variable",
-          "settings": {
-            "foreground": "#cecece",
-          }
-        }
-      ]
-    }
-  },
-  "editor.fontFamily": "Meslo LG L, 'Courier New', monospace",
-  "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "smooth",
+  "editor.fontFamily": "Fira Code",
+  // "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  // "editor.fontFamily": "Meslo LG L, 'Courier New', monospace",
+  // "editor.fontFamily": "Hack, 'Courier New', monospace",
   "editor.fontSize": 13,
-  "editor.lineHeight": 20,
+  "eslint.autoFixOnSave": true,
   "editor.renderIndentGuides": false,
   "editor.minimap.enabled": false,
   "editor.tabCompletion": "on",
+  "editor.suggestSelection": "first",
+  // "editor.tokenColorCustomizations": {
+  //   "[Material Theme]": {
+  //     "sideBar.background": "#151d26",
+  //     "textMateRules": [
+  //       {
+  //         "scope": "variable",
+  //         "settings": {
+  //           "foreground": "#cecece"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
   // git
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
-  // format & linting (Vetur & ESLint)
-  "html.format.wrapAttributes": "force-aligned",
-  // "vetur.format.defaultFormatter.js": "vscode-typescript",
-  // "vetur.format.defaultFormatter.html": "js-beautify-html",
-  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
-  "eslint.autoFixOnSave": true,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "terminal.integrated.fontFamily": "Fira Code Retina",
+  "editor.formatOnSave": true,
   "eslint.validate": [
+    "javascript",
+    "javascriptreact",
     {
-      "language": "vue",
-      "autoFix": true
+      "language": "typescript",
     },
     {
-      "language": "html",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
+      "language": "typescriptreact",
     }
   ],
-  // "Import Cost" plugin
-  "importCost.bundleSizeDecoration": "minified",
-  "importCost.javascriptExtensions": [
-    "\\.jsx?$",
-    "\\.vue$"
-  ],
-  "importCost.typescriptExtensions": [
-    "\\.tsx?$",
-    "\\.vue$"
-  ],
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "workbench.statusBar.feedback.visible": false,
-    // "typescript.tsserver.log": "verbose",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
