@@ -1,0 +1,4 @@
+Path Intellisense
+Prettier
+Visual Studio IntelliCode
+ESLint
