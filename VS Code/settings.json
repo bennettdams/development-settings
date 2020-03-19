@@ -23,6 +23,8 @@
     "editor.tabCompletion": "on",
     "editor.suggestSelection": "first",
     "editor.formatOnSave": true,
+    "editor.lineDecorationsWidth": 25,
+    "editor.padding.top": 40,
     // GIT
     "git.confirmSync": false,
     "git.autofetch": true,
