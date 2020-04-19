@@ -10,6 +10,17 @@
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.iconTheme": "vscode-icons",
+    "workbench.colorCustomizations": {
+        "[Default Dark+]": {
+            "sideBar.background": "#1E1E1E",
+            "titleBar.activeBackground": "#1E1E1E",
+            "titleBar.inactiveBackground": "#1E1E1E",
+            "tab.inactiveBackground": "#1E1E1E",
+            "activityBar.activeBackground": "#1E1E1E",
+            "activityBar.background": "#1E1E1E",
+            "sideBarSectionHeader.background": "#1E1E1E"
+        }
+    },
     // WINDOW
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
@@ -39,6 +50,12 @@
     ],
     // TYPESCRIPT
     "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+        }
+    },
+    "[typescriptreact]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
             "source.fixAll": true,
