@@ -9,6 +9,7 @@
     "workbench.settings.editor": "json",
     "workbench.editor.restoreViewState": false,
     "workbench.tree.renderIndentGuides": "always",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorCustomizations": {
         "[Default Dark+]": {
