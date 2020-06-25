@@ -4,6 +4,7 @@
     "explorer.autoReveal": false,
     "search.showLineNumbers": true,
     "terminal.integrated.fontFamily": "Fira Code",
+    "diffEditor.renderSideBySide": true,
     // WORKBENCH
     "workbench.startupEditor": "newUntitledFile",
     "workbench.settings.editor": "json",
