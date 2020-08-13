@@ -16,6 +16,7 @@
   "editor.formatOnSave": true,
   "editor.lineDecorationsWidth": 25,
   "editor.padding.top": 40,
+  "editor.lineNumbers": "off",
   // WORKBENCH
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
