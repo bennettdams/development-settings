@@ -26,13 +26,13 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
-      "sideBar.background": "#1E1E1E",
-      "titleBar.activeBackground": "#1E1E1E",
-      "titleBar.inactiveBackground": "#1E1E1E",
-      "tab.inactiveBackground": "#1E1E1E",
-      "activityBar.activeBackground": "#1E1E1E",
-      "activityBar.background": "#1E1E1E",
-      "sideBarSectionHeader.background": "#1E1E1E"
+      "sideBar.background": "#282C34",
+      "titleBar.activeBackground": "#282C34",
+      "titleBar.inactiveBackground": "#282C34",
+      "tab.inactiveBackground": "#282C34",
+      "activityBar.activeBackground": "#282C34",
+      "activityBar.background": "#282C34",
+      "sideBarSectionHeader.background": "#282C34"
     }
   },
   // WINDOW
