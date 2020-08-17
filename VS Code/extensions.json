@@ -6,11 +6,16 @@
     "recommendations": [
         "dbaeumer.vscode-eslint",
         "vscode-icons-team.vscode-icons",
+        "mhutchie.git-graph",
+        "atlassian.atlascode",
+        "mongodb.mongodb-vscode",
         "christian-kohler.npm-intellisense",
         "christian-kohler.path-intellisense",
         "esbenp.prettier-vscode",
         "bradlc.vscode-tailwindcss",
         "VisualStudioExptTeam.vscodeintellicode",
+        "ms-azuretools.vscode-docker",
+        "msjsdiag.debugger-for-chrome",
         "DavidAnson.vscode-markdownlint"
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
