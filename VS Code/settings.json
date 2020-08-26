@@ -8,6 +8,8 @@
   "editor.fontWeight": "100",
   "editor.fontSize": 13,
   "terminal.integrated.fontFamily": "Fira Code Retina",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontWeight": "100",
   //EDITOR
   "editor.renderIndentGuides": false,
   "editor.minimap.enabled": false,
