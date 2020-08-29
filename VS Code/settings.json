@@ -28,6 +28,7 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
+      "editor.background": "#282C34",
       "sideBar.background": "#282C34",
       "titleBar.activeBackground": "#282C34",
       "titleBar.inactiveBackground": "#282C34",
