@@ -25,6 +25,8 @@
   "workbench.editor.restoreViewState": false,
   "workbench.tree.renderIndentGuides": "onHover",
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  // THEME
+  "editor.semanticHighlighting.enabled": true,
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
@@ -36,6 +38,14 @@
       "activityBar.activeBackground": "#282C34",
       "activityBar.background": "#282C34",
       "sideBarSectionHeader.background": "#282C34"
+    }
+  },
+  "editor.tokenColorCustomizations": {
+    "[Default Dark+]": {
+      "functions": "#d8c7a7",
+      "types": "#74cfb5",
+      "keywords": "#d9a3d4",
+      "comments": "#829b78"
     }
   },
   // WINDOW
