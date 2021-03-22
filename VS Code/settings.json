@@ -1,14 +1,14 @@
 {
   "telemetry.enableTelemetry": false,
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "explorer.autoReveal": false,
   // FONT
-  "editor.fontFamily": "Fira Code, 'Courier New', monospace",
+  "editor.fontFamily": "'Dank Mono', 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontWeight": "100",
-  "editor.fontSize": 13,
-  "terminal.integrated.fontFamily": "Fira Code Retina",
-  "terminal.integrated.fontSize": 12,
+  "editor.fontWeight": "300",
+  "editor.fontSize": 14,
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "100",
   //EDITOR
   "editor.renderIndentGuides": false,
@@ -19,6 +19,9 @@
   "editor.lineDecorationsWidth": 25,
   "editor.padding.top": 40,
   "editor.lineNumbers": "off",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
   // WORKBENCH
   "workbench.startupEditor": "newUntitledFile",
   "workbench.settings.editor": "json",
@@ -37,20 +40,128 @@
       "tab.inactiveBackground": "#282C34",
       "activityBar.activeBackground": "#282C34",
       "activityBar.background": "#282C34",
-      "sideBarSectionHeader.background": "#282C34"
+      "sideBarSectionHeader.background": "#282C34",
+      "list.activeSelectionForeground": "#ffd6b04d",
+      "list.activeSelectionBackground": "#ffd6b04d",
+      "list.focusBackground": "#ffd6b04d",
+      "list.focusForeground": "#ffd6b04d",
+      "list.focusOutline": "#ffd6b04d"
     }
   },
   "editor.tokenColorCustomizations": {
     "[Default Dark+]": {
-      "functions": "#d8c7a7",
-      "types": "#74cfb5",
+      "functions": "#dacbb1",
+      "types": "#86d4be",
       "keywords": "#d9a3d4",
-      "comments": "#829b78"
-    }
+      "comments": "#829b78",
+      "variables": "#a2cee6",
+      "textMateRules": [{
+        "scope": "variable.other.constant",
+        "settings": {
+          "foreground": "#59b3e4"
+        }
+      },{
+        "scope": "variable.other.enummember",
+        "settings": {
+          "foreground": "#59b3e4"
+        }
+      }]
+    },
+    "textMateRules": [
+      {
+        "scope": [ //following will be in italics
+          "comment",
+          "entity.name.type.class", // class names
+          "keyword", // import, export, return…
+          "support.class.builtin.js", // String, Number, Boolean…, this, super
+          "storage.modifier", //static keyword
+          "storage.type.class.js", //class keyword
+          "storage.type.function.js", // function keyword
+          "storage.type.js", // variable declarations
+          "keyword.control.import.js", // imports
+          "keyword.control.from.js", // from-Keyword
+          "entity.name.type.js", // new … Expression
+          "keyword.control.flow.js", // await
+          "keyword.control.conditional.js", // if
+          "keyword.control.loop.js", // for
+          "keyword.operator.new.js", // new
+          "constant",
+          // from Night Owl
+          "markup.changed",
+          "meta.diff.header.git",
+          "meta.diff.header.from-file",
+          "meta.diff.header.to-file",
+          "markup.deleted.diff",
+          "markup.inserted.diff",
+          "markup.changed",
+          "comment",
+          "punctuation.accessor",
+          "keyword",
+          "storage",
+          // "meta.var.expr",    variables?
+          "meta.class meta.method.declaration meta.var.expr storage.type.js",
+          "storage.type.property.js",
+          "storage.type.property.ts",
+          "storage.type.property.tsx",
+          "entity.name.function",
+          "entity.other.attribute-name",
+          "keyword.operator.relational",
+          "meta.delimiter.period",
+          "meta.selector",
+          "entity.name.tag.doctype",
+          "meta.tag.sgml.doctype",
+          "variable.other.object.property",
+          "keyword.operator.comparison",
+          "keyword.control.flow.js",
+          "keyword.control.flow.ts",
+          "keyword.control.flow.tsx",
+          "keyword.control.ruby",
+          "keyword.control.module.ruby",
+          "keyword.control.class.ruby",
+          "keyword.control.def.ruby",
+          "keyword.control.loop.js",
+          "keyword.control.loop.ts",
+          "keyword.control.import.js",
+          "keyword.control.import.ts",
+          "keyword.control.import.tsx",
+          "keyword.control.from.js",
+          "keyword.control.from.ts",
+          "keyword.control.from.tsx",
+          "keyword.operator.instanceof.js",
+          "keyword.operator.expression.instanceof.ts",
+          "keyword.operator.expression.instanceof.tsx",
+          "italic",
+          "quoate",
+          "source.elixir .punctuation.binary.elixir",
+          "meta.tag.sgml.doctype.html",
+          "variable.other.object.js",
+          "markup.italic.markdown",
+          "markup.quote.markdown",
+          "keyword.control"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          // following will be excluded from italics
+          // "invalid",
+          // "keyword.operator",
+          // "constant.numeric.css",
+          // "keyword.other.unit.px.css",
+          // "constant.numeric.decimal.js",
+          // "constant.numeric.json",
+          // "entity.name.type.class.js"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
   },
   // WINDOW
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 0,
   "window.menuBarVisibility": "toggle",
   // GIT & DIFF
   "git.confirmSync": false,
@@ -78,6 +189,8 @@
     "**/.gh-pages": true
   },
   // TYPESCRIPT
+  // define TS version for VS Code formatting/linting, use workspace installation from node_modules
+  "typescript.tsdk": "node_modules/typescript/lib",
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
@@ -89,6 +202,12 @@
     "editor.codeActionsOnSave": {
       "source.fixAll": true
     }
-  }
-  // AUTOMATIC
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsicons.dontShowNewVersionMessage": true,
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.lint.cssConflict": "warning",
 }
