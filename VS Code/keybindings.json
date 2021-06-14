@@ -113,5 +113,32 @@
     "key": "ctrl+k ctrl+i",
     "command": "-editor.action.showHover",
     "when": "editorTextFocus"
+  },
+  // SYMBOLS
+  {
+    "key": "ctrl+shift+t",
+    "command": "workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "ctrl+shift+oem_period",
+    "command": "-breadcrumbs.focusAndSelect",
+    "when": "breadcrumbsPossible"
   }
 ]
