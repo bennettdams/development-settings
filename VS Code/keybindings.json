@@ -11,19 +11,22 @@
     "command": "-editor.action.deleteLines",
     "when": "textInputFocus && !editorReadonly"
   },
-  // SEARCH EDITOR
+  // Select multiple same text
   {
-    "key": "ctrl+shift+f",
-    "command": "search.action.openNewEditor"
+    "key": "alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorFocus"
+  },
+  // Shrink & Grow selection
+  {
+    "key": "alt+s",
+    "command": "editor.action.smartSelect.grow",
+    "when": "editorFocus"
   },
   {
-    "key": "ctrl+shift+f",
-    "command": "-workbench.view.search",
-    "when": "!searchViewletVisible"
-  },
-  {
-    "key": "ctrl+shift+f",
-    "command": "-workbench.action.findInFiles"
+    "key": "alt+a",
+    "command": "editor.action.smartSelect.shrink",
+    "when": "editorFocus"
   },
   // QUICK FIX
   {
@@ -31,20 +34,10 @@
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
   },
-  {
-    "key": "ctrl+oem_period",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
   // COMMENT
   {
     "key": "ctrl+r",
     "command": "editor.action.commentLine",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+oem_2",
-    "command": "-editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
   // COPY LINES
@@ -96,49 +89,26 @@
   },
   // QUICK OPEN
   {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quickOpenView"
-  },
-  {
-    "key": "ctrl+q",
-    "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
-    "when": "inQuickOpen && inViewsPicker"
-  },
-  {
-    "key": "ctrl+q",
+    "key": "shift+space",
     "command": "editor.action.showDefinitionPreviewHover",
     "when": "editorTextFocus"
   },
+  // FILES
   {
-    "key": "ctrl+k ctrl+i",
-    "command": "-editor.action.showHover",
-    "when": "editorTextFocus"
+    "key": "ctrl+q",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
   },
   // SYMBOLS
   {
-    "key": "ctrl+shift+t",
+    "key": "ctrl+shift+e",
     "command": "workbench.action.showAllSymbols"
   },
   {
-    "key": "ctrl+t",
-    "command": "-workbench.action.showAllSymbols"
-  },
-  {
-    "key": "ctrl+t",
+    "key": "ctrl+e",
     "command": "workbench.action.gotoSymbol"
-  },
-  {
-    "key": "ctrl+shift+o",
-    "command": "-workbench.action.gotoSymbol"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "breadcrumbs.focusAndSelect",
-    "when": "breadcrumbsPossible"
-  },
-  {
-    "key": "ctrl+shift+oem_period",
-    "command": "-breadcrumbs.focusAndSelect",
-    "when": "breadcrumbsPossible"
   }
 ]
