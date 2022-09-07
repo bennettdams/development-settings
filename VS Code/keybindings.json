@@ -110,5 +110,11 @@
   {
     "key": "ctrl+e",
     "command": "workbench.action.gotoSymbol"
+  },
+  // Toggle maximized panel
+  {
+    "key": "shift+space",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "panelFocus"
   }
 ]
