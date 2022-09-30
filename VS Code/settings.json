@@ -83,23 +83,35 @@
   },
   "editor.tokenColorCustomizations": {
     "[Default Dark+]": {
-      "functions": "#e2d5bf",
-      "types": "#86d4be",
-      "strings": "#b89b90",
-      "keywords": "#ceb2cb",
-      "comments": "#9ebb92",
-      "variables": "#a2cee6",
+      "functions": "#dbd4c7",
+      "types": "#9cd6c6",
+      "strings": "#b8a49d",
+      "keywords": "#cfbbcd",
+      "comments": "#9eaf96",
+      "variables": "#9fc8db",
       "textMateRules": [
         {
           "scope": "variable.other.constant",
           "settings": {
-            "foreground": "#59b3e4"
+            "foreground": "#9fc8db"
           }
         },
         {
           "scope": "variable.other.enummember",
           "settings": {
-            "foreground": "#59b3e4"
+            "foreground": "#9fc8db"
+          }
+        },
+        {
+          "scope": "support.type.property-name",
+          "settings": {
+            "foreground": "#9fc8db"
+          }
+        },
+        {
+          "scope": "support.class",
+          "settings": {
+            "foreground": "#aad4c8"
           }
         }
       ]
