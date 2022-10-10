@@ -62,23 +62,23 @@
   "workbench.iconTheme": "vscode-icons",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
-      "editor.background": "#282C34",
-      "sideBar.background": "#282C34",
-      "titleBar.activeBackground": "#282C34",
-      "titleBar.inactiveBackground": "#282C34",
-      "tab.inactiveBackground": "#282C34",
-      "activityBar.activeBackground": "#282C34",
-      "activityBar.background": "#282C34",
-      "sideBarSectionHeader.background": "#282C34",
+      "editor.background": "#23262e",
+      "sideBar.background": "#23262e",
+      "titleBar.activeBackground": "#23262e",
+      "titleBar.inactiveBackground": "#23262e",
+      "tab.inactiveBackground": "#23262e",
+      "activityBar.activeBackground": "#23262e",
+      "activityBar.background": "#23262e",
+      "sideBarSectionHeader.background": "#23262e",
       "list.activeSelectionForeground": "#ffd6b04d",
       "list.activeSelectionBackground": "#ffd6b04d",
       "list.focusBackground": "#ffd6b04d",
       "list.focusForeground": "#ffd6b04d",
       "list.focusOutline": "#ffd6b04d",
-      "statusBar.background": "#282C34",
-      "statusBar.noFolderBackground": "#282C34",
-      "statusBar.debuggingBackground": "#282C34",
-      "statusBarItem.remoteBackground": "#282C34"
+      "statusBar.background": "#23262e",
+      "statusBar.noFolderBackground": "#23262e",
+      "statusBar.debuggingBackground": "#23262e",
+      "statusBarItem.remoteBackground": "#23262e"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -104,6 +104,12 @@
         },
         {
           "scope": "support.type.property-name",
+          "settings": {
+            "foreground": "#9fc8db"
+          }
+        },
+        {
+          "scope": "entity.other.attribute-name",
           "settings": {
             "foreground": "#9fc8db"
           }
