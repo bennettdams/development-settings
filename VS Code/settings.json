@@ -59,7 +59,8 @@
   },
   // THEME
   "editor.semanticHighlighting.enabled": true,
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "quill-icons",
+  "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "editor.background": "#23262e",
@@ -83,35 +84,35 @@
   },
   "editor.tokenColorCustomizations": {
     "[Default Dark+]": {
-      "functions": "#dbd4c7",
-      "types": "#9cd6c6",
-      "strings": "#b8a49d",
-      "keywords": "#cfbbcd",
-      "comments": "#9eaf96",
-      "variables": "#9fc8db",
+      "functions": "#7bb9d6",
+      "types": "#90caba",
+      "strings": "#b8a8a2",
+      "keywords": "#889dc2",
+      "comments": "#a8b8a9",
+      "variables": "#bcd0d8",
       "textMateRules": [
         {
           "scope": "variable.other.constant",
           "settings": {
-            "foreground": "#9fc8db"
+            "foreground": "#bcd0d8"
           }
         },
         {
           "scope": "variable.other.enummember",
           "settings": {
-            "foreground": "#9fc8db"
+            "foreground": "#bcd0d8"
           }
         },
         {
           "scope": "support.type.property-name",
           "settings": {
-            "foreground": "#9fc8db"
+            "foreground": "#bcd0d8"
           }
         },
         {
           "scope": "entity.other.attribute-name",
           "settings": {
-            "foreground": "#9fc8db"
+            "foreground": "#bcd0d8"
           }
         },
         {
