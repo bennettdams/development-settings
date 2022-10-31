@@ -19,12 +19,12 @@
   },
   // Shrink & Grow selection
   {
-    "key": "alt+s",
+    "key": "alt+a",
     "command": "editor.action.smartSelect.grow",
     "when": "editorFocus"
   },
   {
-    "key": "alt+a",
+    "key": "alt+s",
     "command": "editor.action.smartSelect.shrink",
     "when": "editorFocus"
   },
@@ -116,5 +116,42 @@
     "key": "shift+space",
     "command": "workbench.action.toggleMaximizedPanel",
     "when": "panelFocus"
+  },
+  // multi cursor
+  {
+    "key": "shift+alt+up",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+down",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "-editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  // JUMP LINES
+  {
+    "key": "ctrl+up",
+    "command": "cursorMove",
+    "args": {
+      "to": "up",
+      "by": "line",
+      "value": 10
+    },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "cursorMove",
+    "args": {
+      "to": "down",
+      "by": "line",
+      "value": 10
+    },
+    "when": "editorTextFocus"
   }
 ]
