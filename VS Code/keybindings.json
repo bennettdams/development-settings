@@ -40,6 +40,10 @@
     "command": "editor.action.commentLine",
     "when": "editorTextFocus && !editorReadonly"
   },
+  {
+    "key": "ctrl+r",
+    "command": "-workbench.action.openRecent"
+  },
   // COPY LINES
   {
     "key": "ctrl+alt+down",
