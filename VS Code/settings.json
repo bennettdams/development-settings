@@ -10,8 +10,9 @@
   "editor.fontFamily": "'Dank Mono', 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.stickyScroll.enabled": true,
-  // "editor.fontWeight": "300",
+  "editor.fontWeight": "300",
   "editor.fontSize": 14,
+  "editor.linkedEditing": true,
   "terminal.integrated.fontFamily": "'Dank Mono'",
   "terminal.integrated.fontSize": 14,
   // EDITOR
@@ -63,23 +64,23 @@
   "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
-      "editor.background": "#23262e",
-      "sideBar.background": "#23262e",
-      "titleBar.activeBackground": "#23262e",
-      "titleBar.inactiveBackground": "#23262e",
-      "tab.inactiveBackground": "#23262e",
-      "activityBar.activeBackground": "#23262e",
-      "activityBar.background": "#23262e",
-      "sideBarSectionHeader.background": "#23262e",
+      "editor.background": "#21242e",
+      "sideBar.background": "#21242e",
+      "titleBar.activeBackground": "#21242e",
+      "titleBar.inactiveBackground": "#21242e",
+      "tab.inactiveBackground": "#21242e",
+      "activityBar.activeBackground": "#21242e",
+      "activityBar.background": "#21242e",
+      "sideBarSectionHeader.background": "#21242e",
       "list.activeSelectionForeground": "#ffd6b04d",
       "list.activeSelectionBackground": "#ffd6b04d",
       "list.focusBackground": "#ffd6b04d",
       "list.focusForeground": "#ffd6b04d",
       "list.focusOutline": "#ffd6b04d",
-      "statusBar.background": "#23262e",
-      "statusBar.noFolderBackground": "#23262e",
-      "statusBar.debuggingBackground": "#23262e",
-      "statusBarItem.remoteBackground": "#23262e"
+      "statusBar.background": "#21242e",
+      "statusBar.noFolderBackground": "#21242e",
+      "statusBar.debuggingBackground": "#21242e",
+      "statusBarItem.remoteBackground": "#21242e"
     }
   },
   "editor.tokenColorCustomizations": {
@@ -92,25 +93,18 @@
       "variables": "#bcd0d8",
       "textMateRules": [
         {
-          "scope": "variable.other.constant",
+          "scope": "entity.name.tag.tsx",
           "settings": {
-            "foreground": "#bcd0d8"
+            "foreground": "#889dc2"
           }
         },
         {
-          "scope": "variable.other.enummember",
-          "settings": {
-            "foreground": "#bcd0d8"
-          }
-        },
-        {
-          "scope": "support.type.property-name",
-          "settings": {
-            "foreground": "#bcd0d8"
-          }
-        },
-        {
-          "scope": "entity.other.attribute-name",
+          "scope": [
+            "variable.other.constant",
+            "variable.other.enummember",
+            "support.type.property-name",
+            "entity.other.attribute-name"
+          ],
           "settings": {
             "foreground": "#bcd0d8"
           }
@@ -221,16 +215,18 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
-  "git.mergeEditor": true,
+  "git.mergeEditor": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   // LINTING & FORMATTING
   "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
+    // "source.fixAll.eslint": true,
+    "source.fixAll.eslint": false,
     "source.organizeImports": true
   },
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": ".prettierrc",
   // TAILWIND
