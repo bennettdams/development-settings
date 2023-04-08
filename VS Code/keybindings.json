@@ -157,5 +157,20 @@
       "value": 10
     },
     "when": "editorTextFocus"
+  },
+  // TOGGLE
+  {
+    "key": "ctrl+space",
+    "command": "workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  // TABS
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+alt+left",
+    "command": "workbench.action.previousEditor"
   }
 ]
