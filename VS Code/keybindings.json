@@ -160,7 +160,7 @@
   },
   // TOGGLE
   {
-    "key": "ctrl+space",
+    "key": "ctrl+tab",
     "command": "workbench.view.explorer",
     "when": "viewContainer.workbench.view.explorer.enabled"
   },
