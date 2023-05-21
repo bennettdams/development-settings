@@ -25,6 +25,7 @@
   "editor.padding.top": 40,
   "editor.lineNumbers": "off",
   "editor.suggest.preview": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "workbench.editor.labelFormat": "short",
   // INLAY HINTS
   "javascript.inlayHints.parameterNames.enabled": "all",
