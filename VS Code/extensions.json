@@ -19,7 +19,8 @@
         "DavidAnson.vscode-markdownlint",
         "antfu.icons-carbon",
         "cdonohue.quill-icons",
-        "usernamehw.errorlens"
+        "usernamehw.errorlens",
+	    "yoavbls.pretty-ts-errors"
     ],
     // List of extensions recommended by VS Code that should not be recommended for users of this workspace.
     "unwantedRecommendations": []

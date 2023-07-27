@@ -29,7 +29,7 @@
 	},
 	"import x from '": {
 	  "prefix": "imp",
-	  "body": "import ${2:*} from '$1'$3"
+	  "body": "import { ${2:} } from '$1'$3"
 	},
 	"Switch": {
 	  "prefix": "switch",
