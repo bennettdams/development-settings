@@ -172,5 +172,29 @@
   {
     "key": "ctrl+alt+left",
     "command": "workbench.action.previousEditor"
+  },
+  // EXTENSION: CODE ACE JUMPER
+  {
+    "key": "alt+q",
+    "command": "extension.aceJump.multiChar",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+q",
+    "command": "extension.aceJump.selection",
+    "when": "editorTextFocus"
   }
+  // {
+  //   "key": "your key",
+  //   "command": "extension.aceJump",
+  //   "when": "editorTextFocus"
+  // },
+  // {
+  //   "key": "your key",
+  //   "command": "extension.aceJump.multiChar"
+  // },
+  // {
+  //   "key": "your key",
+  //   "command": "extension.aceJump.line"
+  // },
 ]
