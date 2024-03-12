@@ -15,7 +15,7 @@
   "editor.fontSize": 14,
   "editor.linkedEditing": true,
   "terminal.integrated.fontFamily": "'Dank Mono'",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 13,
   // EDITOR
   "editor.guides.indentation": false,
   "editor.smartSelect.selectSubwords": false,
@@ -28,25 +28,26 @@
   "editor.lineNumbers": "off",
   "editor.suggest.preview": true,
   "editor.cursorSmoothCaretAnimation": "on",
-  "workbench.editor.labelFormat": "short",
   // INLAY HINTS
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
   "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
-  "javascript.inlayHints.variableTypes.enabled": true,
-  "typescript.inlayHints.variableTypes.enabled": true,
+  "javascript.inlayHints.variableTypes.enabled": false,
+  "typescript.inlayHints.variableTypes.enabled": false,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.suggest.completeFunctionCalls": true,
   // WORKBENCH
+  "workbench.colorTheme": "Default Dark+",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.editor.restoreViewState": false,
   "workbench.tree.renderIndentGuides": "onHover",
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.labelFormat": "short",
   // WINDOW
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "toggle",
@@ -222,14 +223,11 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   // LINTING & FORMATTING
-  "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    // "source.fixAll.eslint": true,
-    "source.fixAll.eslint": false,
-    "source.organizeImports": true
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "explicit"
   },
-  // "editor.formatOnSave": true,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "prettier.configPath": ".prettierrc",
   // TAILWIND
@@ -238,5 +236,4 @@
   "tailwindCSS.showPixelEquivalents": true,
   // MISC
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "vsicons.dontShowNewVersionMessage": true,
 }
