@@ -108,20 +108,14 @@
   },
   // SYMBOLS
   {
-    "key": "ctrl+shift+e",
+    "key": "ctrl+shift+t",
     "command": "workbench.action.showAllSymbols"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+t",
     "command": "workbench.action.gotoSymbol"
   },
-  // Toggle maximized panel
-  {
-    "key": "shift+space",
-    "command": "workbench.action.toggleMaximizedPanel",
-    "when": "panelFocus"
-  },
-  // multi cursor
+  // MULTI CURSOR
   {
     "key": "shift+alt+up",
     "command": "editor.action.insertCursorAbove",
@@ -166,17 +160,108 @@
   },
   // TABS
   {
-    "key": "ctrl+alt+right",
+    "key": "ctrl+cmd+left",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+cmd+right",
     "command": "workbench.action.nextEditor"
   },
   {
+    "key": "ctrl+cmd+left",
+    "command": "-workbench.action.moveEditorToPreviousGroup"
+  },
+  {
+    "key": "ctrl+cmd+right",
+    "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  // SPLIT TAB
+  {
+    "key": "ctrl+alt+right",
+    "command": "workbench.action.moveEditorToNextGroup"
+  },
+  {
     "key": "ctrl+alt+left",
-    "command": "workbench.action.previousEditor"
+    "command": "workbench.action.moveEditorToPreviousGroup"
   },
   // Jump to marker
   {
-    "key": "cmd+[Period]",
-    "command": "editor.action.marker.nextInFiles",
+    "key": "cmd+y",
+    "command": "editor.action.marker.next",
     "when": "editorFocus"
+  },
+  // QUICK SEARCH
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.quickTextSearch",
+    "when": "editorFocus"
+  },
+  // MAXIMIZE PANEL
+  {
+    "key": "shift+cmd+w",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+cmd+w",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  // Toggle terminal
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+t",
+    "command": "-workbench.action.reopenClosedEditor"
+  },
+  // Explorer & Git
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.view.explorer",
+    "when": "focusedView == workbench.scm || viewContainer.workbench.view.explorer.enabled"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "workbench.view.scm",
+    "when": "focusedView == workbench.explorer.fileView && workbench.scm.active"
+  },
+  {
+    "key": "shift+cmd+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
+  },
+  // REFERENCES
+  {
+    "key": "shift+cmd+r",
+    "command": "-rerunSearchEditorSearch",
+    "when": "inSearchEditor"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "references-view.findReferences",
+    "when": "editorHasReferenceProvider"
+  },
+  // GO TO DEFINTION
+  {
+    "key": "shift+cmd+s",
+    "command": "editor.action.revealDefinitionAside",
+    "when": "editorHasDefinitionProvider && editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+s",
+    "command": "-workbench.action.files.saveAs"
+  },
+  // GO BACK
+  {
+    "key": "shift+cmd+a",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
   }
 ]

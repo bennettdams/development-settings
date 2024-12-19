@@ -28,6 +28,7 @@
   "editor.lineNumbers": "off",
   "editor.suggest.preview": true,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.accessibilitySupport": "off",
   // INLAY HINTS
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -234,6 +235,10 @@
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.colorDecorators": true,
   "tailwindCSS.showPixelEquivalents": true,
+  // Copilot
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.followUps": "always",
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
   // MISC
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
