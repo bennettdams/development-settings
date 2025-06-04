@@ -16,6 +16,7 @@
   "editor.linkedEditing": true,
   "terminal.integrated.fontFamily": "'Dank Mono'",
   "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontLigatures.enabled": true,
   // EDITOR
   "editor.guides.indentation": false,
   "editor.smartSelect.selectSubwords": false,
@@ -29,6 +30,8 @@
   "editor.suggest.preview": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.accessibilitySupport": "off",
+  "typescript.experimental.expandableHover": true,
+  "editor.inlineSuggest.syntaxHighlightingEnabled": true,
   // INLAY HINTS
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -66,7 +69,6 @@
   // THEME
   "editor.semanticHighlighting.enabled": true,
   "workbench.iconTheme": "quill-icons",
-  "workbench.productIconTheme": "icons-carbon",
   "workbench.colorCustomizations": {
     "[Default Dark+]": {
       "editor.background": "#21242e",
@@ -221,6 +223,7 @@
   "git.autofetch": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.mergeEditor": false,
+  "git.blame.editorDecoration.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   // LINTING & FORMATTING
@@ -236,9 +239,13 @@
   "tailwindCSS.colorDecorators": true,
   "tailwindCSS.showPixelEquivalents": true,
   // Copilot
-  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true
+  },
+  "github.copilot.editor.enableCodeActions": true,
   "github.copilot.chat.followUps": "always",
-  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.agent.enabled": true,
   // MISC
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

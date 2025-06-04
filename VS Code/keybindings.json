@@ -245,8 +245,7 @@
   },
   {
     "key": "shift+cmd+r",
-    "command": "references-view.findReferences",
-    "when": "editorHasReferenceProvider"
+    "command": "editor.action.referenceSearch.trigger"
   },
   // GO TO DEFINTION
   {
