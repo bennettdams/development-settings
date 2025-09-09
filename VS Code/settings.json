@@ -32,6 +32,7 @@
   "editor.accessibilitySupport": "off",
   "typescript.experimental.expandableHover": true,
   "editor.inlineSuggest.syntaxHighlightingEnabled": true,
+  "js/ts.hover.maximumLength": 500,
   // INLAY HINTS
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -223,7 +224,7 @@
   "git.autofetch": true,
   "git.alwaysShowStagedChangesResourceGroup": true,
   "git.mergeEditor": false,
-  "git.blame.editorDecoration.enabled": false,
+  "git.blame.editorDecoration.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   // LINTING & FORMATTING
@@ -233,6 +234,7 @@
   },
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.stablePeek": false,
   "prettier.configPath": ".prettierrc",
   // TAILWIND
   "tailwindCSS.emmetCompletions": true,
@@ -246,6 +248,31 @@
   "github.copilot.chat.followUps": "always",
   "github.copilot.nextEditSuggestions.enabled": true,
   "chat.agent.enabled": true,
+  "chat.notifyWindowOnConfirmation": true,
+  "chat.checkpoints.enabled": true,
+  "chat.tools.terminal.autoApprove": {
+    // Test
+    "/^npm run test.*$/": true,
+    "/^npm test.*$/": true,
+    "/^npx vitest run.*$/": true,
+    // Lint
+    "/^npm lint.*$/": true,
+    "/^npm run lint.*$/": true,
+    // Type-check
+    "/^npm run tsc.*$/": true,
+    "/^npx tsc.*$/": true,
+    "/^npm run type-check$/": true,
+    "/^npm run tc$/": true,
+    // Build
+    "/^npm run build$/": true,
+    // Other
+    "/^ls$/": true
+  },
+  "chat.todoListTool.enabled": true,
   // MISC
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "pgsql.openQueryResultsInTabByDefault": true,
+  "pgsql.openQueryResultsInTabByDefaultDoNotShowPrompt": true,
+  "pgsql.copilot.enable": true,
+  "docker.extension.enableComposeLanguageServer": false
 }
